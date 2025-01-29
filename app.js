@@ -1,5 +1,9 @@
 let listaDeNumerosSorteados = [];
+<<<<<<< HEAD
 let numeroLimite = 50;
+=======
+let numeroLimite = 10;
+>>>>>>> parent of e748abd (alterando limite para 100.)
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -18,8 +22,13 @@ function exibirTextoNaTela(tag, texto) {
 }
 
 function exibirMensagemInicial() {
+<<<<<<< HEAD
     exibirTextoNaTela('h1', 'Jogo do número secreto!');
     exibirTextoNaTela('p', 'Escolha um número entre 1 e 50!');
+=======
+    exibirTextoNaTela('h1', 'Jogo do número secreto');
+    exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
+>>>>>>> parent of e748abd (alterando limite para 100.)
 }
 
 exibirMensagemInicial();
@@ -35,9 +44,9 @@ function verificarChute() {
         document.getElementById('reiniciar').removeAttribute('disabled');
     } else {
         if (chute > numeroSecreto) {
-            exibirTextoNaTela('p', 'O número secreto é menor!');
+            exibirTextoNaTela('p', 'O número secreto é menor');
         } else {
-            exibirTextoNaTela('p', 'O número secreto é maior!');
+            exibirTextoNaTela('p', 'O número secreto é maior');
         }
         tentativas++;
         limparCampo();
